@@ -1,0 +1,2589 @@
+{
+  "metadata": {
+    "source": "palm_params_index.json",
+    "total_params_with_options": 270,
+    "total_translation_issues": 12,
+    "generated_at": "2026-05-18"
+  },
+  "param_options": [
+    {
+      "param_name": "advanced_div_correction",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "allow_negative_scalar_values",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "allow_roughness_limitation",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "approximation",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "boussinesq",
+        "anelastic"
+      ]
+    },
+    {
+      "param_name": "bc_e_b",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "neumann",
+        "(u*)**2+neumann"
+      ]
+    },
+    {
+      "param_name": "bc_lr",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "cyclic",
+        "dirichlet/radiation",
+        "radiation/dirichlet",
+        "nested"
+      ]
+    },
+    {
+      "param_name": "bc_ns",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "cyclic",
+        "dirichlet/radiation",
+        "radiation/dirichlet",
+        "nested"
+      ]
+    },
+    {
+      "param_name": "bc_p_b",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "dirichlet",
+        "neumann"
+      ]
+    },
+    {
+      "param_name": "bc_p_t",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "dirichlet",
+        "neumann"
+      ]
+    },
+    {
+      "param_name": "bc_pt_b",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "dirichlet",
+        "neumann"
+      ]
+    },
+    {
+      "param_name": "bc_pt_t",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "dirichlet",
+        "initial_gradient",
+        "nested",
+        "neumann"
+      ]
+    },
+    {
+      "param_name": "bc_q_b",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "dirichlet",
+        "neumann"
+      ]
+    },
+    {
+      "param_name": "bc_q_t",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "dirichlet",
+        "initial_gradient",
+        "nested",
+        "neumann"
+      ]
+    },
+    {
+      "param_name": "bc_s_b",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "dirichlet",
+        "neumann"
+      ]
+    },
+    {
+      "param_name": "bc_s_t",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "dirichlet",
+        "initial_gradient",
+        "nested",
+        "neumann"
+      ]
+    },
+    {
+      "param_name": "bc_uv_b",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "dirichlet",
+        "neumann"
+      ]
+    },
+    {
+      "param_name": "bc_uv_t",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "dirichlet",
+        "dirichlet_0",
+        "nested",
+        "neumann"
+      ]
+    },
+    {
+      "param_name": "calc_soil_moisture_during_spinup",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "call_psolver_at_all_substeps",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "check_realistic_q",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "cloud_droplets",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "collective_wait",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "conserve_volume_flow",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "conserve_volume_flow_mode",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "initial_profiles",
+        "bulk_velocity"
+      ]
+    },
+    {
+      "param_name": "constant_flux_layer",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "cut_cell_topography",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "cycle_mg",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "w"
+      ]
+    },
+    {
+      "param_name": "data_output_during_spinup",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "dissipation_1d",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "as_in_3d_model",
+        "detering"
+      ]
+    },
+    {
+      "param_name": "dp_external",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "dp_smooth",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "fft_method",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "temperton-algorithm",
+        "singleton-algorithm",
+        "fftw",
+        "system-specific"
+      ]
+    },
+    {
+      "param_name": "flux_input_mode",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "application-specific",
+        "kinematic"
+      ]
+    },
+    {
+      "param_name": "flux_output_mode",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "application-specific",
+        "kinematic"
+      ]
+    },
+    {
+      "param_name": "galilei_transformation",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "homogenize_surface_temperature",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "humidity",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "implicit_diffusion_1d",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "initializing_actions",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "by_user",
+        "cyclic_fill",
+        "initialize_bubble",
+        "initialize_ptanom",
+        "initialize_vortex",
+        "interpolate_from_parent",
+        "read_from_file",
+        "set_constant_profiles",
+        "set_1d-model_profiles",
+        "read_restart_data",
+        "read_spinup_data"
+      ]
+    },
+    {
+      "param_name": "large_scale_forcing",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "large_scale_subsidence",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "loop_optimization",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "cache",
+        "vector"
+      ]
+    },
+    {
+      "param_name": "lsf_exception",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "masking_method",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "mixing_length_1d",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "blackadar",
+        "as_in_3d_model"
+      ]
+    },
+    {
+      "param_name": "momentum_advec",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "ws-scheme",
+        "pw-scheme",
+        "up-scheme"
+      ]
+    },
+    {
+      "param_name": "monotonic_limiter_z",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "netcdf_precision",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "_NF90_REAL4"
+      ]
+    },
+    {
+      "param_name": "neutral",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "nudging",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "passive_scalar",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "psolver",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "poisfft",
+        "poisfft_sm",
+        "multigrid",
+        "multigrid_noopt",
+        "sor"
+      ]
+    },
+    {
+      "param_name": "random_generator",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "random-parallel",
+        "numerical-recipes",
+        "system-specific"
+      ]
+    },
+    {
+      "param_name": "random_heatflux",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "reference_state",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "initial_profile",
+        "horizontal_average",
+        "single_value"
+      ]
+    },
+    {
+      "param_name": "restart_data_format",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "fortran_binary",
+        "mpi",
+        "mpi_shared_memory"
+      ]
+    },
+    {
+      "param_name": "scalar_advec",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "ws-scheme",
+        "pw-scheme",
+        "bc-scheme"
+      ]
+    },
+    {
+      "param_name": "scalar_rayleigh_damping",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "terrain_following_mapping",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "timestep_scheme",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "runge-kutta-3",
+        "runge-kutta-2",
+        "euler"
+      ]
+    },
+    {
+      "param_name": "topography",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "flat",
+        "single_building",
+        "single_street_canyon",
+        "read_from_file",
+        "tunnel",
+        "closed_channel"
+      ]
+    },
+    {
+      "param_name": "topography_grid_convention",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "cell_edge",
+        "cell_center"
+      ]
+    },
+    {
+      "param_name": "turbulence_closure",
+      "category": "initialization-parameters",
+      "type": "character",
+      "options": [
+        "1.5-order",
+        "tke-l",
+        "tke-e"
+      ]
+    },
+    {
+      "param_name": "turbulent_outflow",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "use_fixed_date",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "use_fixed_time",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "use_free_convection_scaling",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "use_ug_for_galilei_tr",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "use_subsidence_tendencies",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "use_surface_fluxes",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "use_top_fluxes",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "use_upstream_for_tke",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "vdi_checks",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "wall_adjustment",
+      "category": "initialization-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "cpu_log_barrierwait",
+      "category": "runtime-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "create_disturbances",
+      "category": "runtime-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "data_output_2d_on_each_pe",
+      "category": "runtime-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "data_output_pr",
+      "category": "runtime-parameters",
+      "type": "character",
+      "options": [
+        "#",
+        "eta"
+      ]
+    },
+    {
+      "param_name": "data_output_raw",
+      "category": "runtime-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "debug_output",
+      "category": "runtime-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "debug_output_timestep",
+      "category": "runtime-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "do2d_at_begin",
+      "category": "runtime-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "do3d_at_begin",
+      "category": "runtime-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "enable_openacc",
+      "category": "runtime-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "force_print_header",
+      "category": "runtime-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "homogenize_surface_temperature",
+      "category": "runtime-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "interpolate_to_grid_center",
+      "category": "runtime-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "netcdf_compression_method",
+      "category": "runtime-parameters",
+      "type": "character",
+      "options": [
+        "none",
+        "deflate",
+        "zstd"
+      ]
+    },
+    {
+      "param_name": "open_debug_files",
+      "category": "runtime-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "synchronous_exchange",
+      "category": "runtime-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "use_contiguous_buffer",
+      "category": "runtime-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "a_rand_target",
+      "category": "agent-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "agent_time_unlimited",
+      "category": "agent-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "bc_mas_lr",
+      "category": "agent-parameters",
+      "type": "character",
+      "options": [
+        "absorb",
+        "cyclic"
+      ]
+    },
+    {
+      "param_name": "bc_mas_ns",
+      "category": "agent-parameters",
+      "type": "character",
+      "options": [
+        "absorb",
+        "cyclic"
+      ]
+    },
+    {
+      "param_name": "deallocate_memory_mas",
+      "category": "agent-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "random_start_position_agents",
+      "category": "agent-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "read_agents_from_restartfile",
+      "category": "agent-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "agent-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "thermal_comfort",
+      "category": "biometeorology-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "biometeorology-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "aerosol_bulk",
+      "category": "bulk-cloud-parameters",
+      "type": "character",
+      "options": [
+        "nacl",
+        "c3h4o4",
+        "nh4no3"
+      ]
+    },
+    {
+      "param_name": "call_microphysics_at_all_substeps",
+      "category": "bulk-cloud-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "cloud_scheme",
+      "category": "bulk-cloud-parameters",
+      "type": "character",
+      "options": [
+        "kessler",
+        "morrison",
+        "morrison_no_rain",
+        "saturation_adjust",
+        "seifert_beheng"
+      ]
+    },
+    {
+      "param_name": "cloud_water_sedimentation",
+      "category": "bulk-cloud-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "collision_turbulence",
+      "category": "bulk-cloud-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "curvature_solution_effects_bulk",
+      "category": "bulk-cloud-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "graupel",
+      "category": "bulk-cloud-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "ice_crystal_sedimentation",
+      "category": "bulk-cloud-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "limiter_sedimentation",
+      "category": "bulk-cloud-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "microphysics_ice_phase",
+      "category": "bulk-cloud-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "snow",
+      "category": "bulk-cloud-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "bulk-cloud-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "ventilation_effect",
+      "category": "bulk-cloud-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "bc_cs_b",
+      "category": "chemistry-parameters",
+      "type": "character",
+      "options": [
+        "dirichlet"
+      ]
+    },
+    {
+      "param_name": "bc_cs_l",
+      "category": "chemistry-parameters",
+      "type": "character",
+      "options": [
+        "dirichlet"
+      ]
+    },
+    {
+      "param_name": "bc_cs_n",
+      "category": "chemistry-parameters",
+      "type": "character",
+      "options": [
+        "dirichlet"
+      ]
+    },
+    {
+      "param_name": "bc_cs_r",
+      "category": "chemistry-parameters",
+      "type": "character",
+      "options": [
+        "dirichlet"
+      ]
+    },
+    {
+      "param_name": "bc_cs_s",
+      "category": "chemistry-parameters",
+      "type": "character",
+      "options": [
+        "dirichlet"
+      ]
+    },
+    {
+      "param_name": "bc_cs_t",
+      "category": "chemistry-parameters",
+      "type": "character",
+      "options": [
+        "initial_gradient",
+        "dirichlet"
+      ]
+    },
+    {
+      "param_name": "call_chem_at_all_substeps",
+      "category": "chemistry-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "chem_gasphase_on",
+      "category": "chemistry-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "chem_isorropia",
+      "category": "chemistry-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "chem_wet_deposition",
+      "category": "chemistry-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "chem_wet_deposition_model_override",
+      "category": "chemistry-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "deposition_dry",
+      "category": "chemistry-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "ebio_soilm_method",
+      "category": "chemistry-parameters",
+      "type": "character",
+      "options": [
+        "bulk",
+        "weighted"
+      ]
+    },
+    {
+      "param_name": "emis_biogenic",
+      "category": "chemistry-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "emis_domestic",
+      "category": "chemistry-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "emis_generic",
+      "category": "chemistry-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "emiss_interpolate",
+      "category": "chemistry-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "emis_nonstationary",
+      "category": "chemistry-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "emis_pollen",
+      "category": "chemistry-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "emis_pt_source",
+      "category": "chemistry-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "emis_traffic",
+      "category": "chemistry-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "emissions_anthropogenic",
+      "category": "chemistry-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "epol_ignore_precip",
+      "category": "chemistry-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "epol_ignore_solar",
+      "category": "chemistry-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "nesting_chem",
+      "category": "chemistry-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "nesting_offline_chem",
+      "category": "chemistry-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "photolysis_scheme",
+      "category": "chemistry-parameters",
+      "type": "character",
+      "options": [
+        "simple"
+      ]
+    },
+    {
+      "param_name": "photolysis_shading",
+      "category": "chemistry-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "chemistry-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "bc_dm_b",
+      "category": "dust-emission-and-transport-parameters",
+      "type": "character",
+      "options": [
+        "neumann"
+      ]
+    },
+    {
+      "param_name": "bc_dm_l",
+      "category": "dust-emission-and-transport-parameters",
+      "type": "character",
+      "options": [
+        "cyclic"
+      ]
+    },
+    {
+      "param_name": "bc_dm_n",
+      "category": "dust-emission-and-transport-parameters",
+      "type": "character",
+      "options": [
+        "cyclic"
+      ]
+    },
+    {
+      "param_name": "bc_dm_r",
+      "category": "dust-emission-and-transport-parameters",
+      "type": "character",
+      "options": [
+        "cyclic"
+      ]
+    },
+    {
+      "param_name": "bc_dm_s",
+      "category": "dust-emission-and-transport-parameters",
+      "type": "character",
+      "options": [
+        "cyclic"
+      ]
+    },
+    {
+      "param_name": "bc_dm_t",
+      "category": "dust-emission-and-transport-parameters",
+      "type": "character",
+      "options": [
+        "dirichlet",
+        "neumann"
+      ]
+    },
+    {
+      "param_name": "deposition_scheme",
+      "category": "dust-emission-and-transport-parameters",
+      "type": "character",
+      "options": [
+        "Z01"
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "dust-emission-and-transport-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "fastv8-coupler-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "geostrophic_wind_controller",
+      "category": "flow-control-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "indoor_during_spinup",
+      "category": "indoor-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "indoor-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "aero_resist_kray",
+      "category": "land-surface-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "conserve_water_content",
+      "category": "land-surface-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "constant_roughness",
+      "category": "land-surface-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "land-surface-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "offline-nesting-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "homogeneous_initialization_child",
+      "category": "nesting-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "nesting_datatransfer_mode",
+      "category": "nesting-parameters",
+      "type": "character",
+      "options": [
+        "cascade",
+        "mixed",
+        "overlap"
+      ]
+    },
+    {
+      "param_name": "nesting_bounds",
+      "category": "nesting-parameters",
+      "type": "character",
+      "options": [
+        "3d_nested",
+        "cyclic_along_x",
+        "cyclic_along_y",
+        "vertical_only"
+      ]
+    },
+    {
+      "param_name": "nesting_mode",
+      "category": "nesting-parameters",
+      "type": "character",
+      "options": [
+        "one-way",
+        "two-way"
+      ]
+    },
+    {
+      "param_name": "particle_coupling",
+      "category": "nesting-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "nesting-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "synchronize_timestep",
+      "category": "nesting-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "use_one_sided_communication",
+      "category": "nesting-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "bc_sa_t",
+      "category": "ocean-parameters",
+      "type": "character",
+      "options": [
+        "dirichlet",
+        "neumann"
+      ]
+    },
+    {
+      "param_name": "salinity",
+      "category": "ocean-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "ocean-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "wave_breaking",
+      "category": "ocean-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "aero_species",
+      "category": "particle-parameters",
+      "type": "character",
+      "options": [
+        "nacl"
+      ]
+    },
+    {
+      "param_name": "aero_type",
+      "category": "particle-parameters",
+      "type": "character",
+      "options": [
+        "maritime",
+        "background"
+      ]
+    },
+    {
+      "param_name": "bc_par_b",
+      "category": "particle-parameters",
+      "type": "character",
+      "options": [
+        "absorb",
+        "reflect",
+        "reset"
+      ]
+    },
+    {
+      "param_name": "bc_par_lr",
+      "category": "particle-parameters",
+      "type": "character",
+      "options": [
+        "absorb",
+        "cyclic",
+        "nested",
+        "reflect"
+      ]
+    },
+    {
+      "param_name": "bc_par_ns",
+      "category": "particle-parameters",
+      "type": "character",
+      "options": [
+        "absorb",
+        "cyclic",
+        "nested",
+        "reflect"
+      ]
+    },
+    {
+      "param_name": "bc_par_t",
+      "category": "particle-parameters",
+      "type": "character",
+      "options": [
+        "absorb",
+        "reflect"
+      ]
+    },
+    {
+      "param_name": "collision_kernel",
+      "category": "particle-parameters",
+      "type": "character",
+      "options": [
+        "none",
+        "hall",
+        "hall_fast",
+        "wang"
+      ]
+    },
+    {
+      "param_name": "curvature_solution_effects",
+      "category": "particle-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "deallocate_memory",
+      "category": "particle-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "merging",
+      "category": "particle-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "particle_advection_interpolation",
+      "category": "particle-parameters",
+      "type": "character",
+      "options": [
+        "trilinear",
+        "simple_corrector",
+        "simple_predictor"
+      ]
+    },
+    {
+      "param_name": "random_start_position",
+      "category": "particle-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "read_particles_from_restartfile",
+      "category": "particle-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "seed_follows_topography",
+      "category": "particle-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "splitting",
+      "category": "particle-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "splitting_function",
+      "category": "particle-parameters",
+      "type": "character",
+      "options": [
+        "exp",
+        "gamma",
+        "log"
+      ]
+    },
+    {
+      "param_name": "splitting_mode",
+      "category": "particle-parameters",
+      "type": "character",
+      "options": [
+        "const",
+        "cl_av",
+        "gb_av"
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "particle-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "unlimited_dimension",
+      "category": "particle-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "use_sgs_for_particles",
+      "category": "particle-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "vertical_particle_advection",
+      "category": "particle-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "write_particle_statistics",
+      "category": "particle-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "canopy_mode",
+      "category": "plant-canopy-parameters",
+      "type": "character",
+      "options": [
+        "homogeneous",
+        "read_from_file",
+        "user_defined"
+      ]
+    },
+    {
+      "param_name": "plant_canopy_transpiration",
+      "category": "plant-canopy-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "plant-canopy-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "constant_albedo",
+      "category": "radiation-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "lw_radiation",
+      "category": "radiation-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "mrt_include_sw",
+      "category": "radiation-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "mrt_skip_roof",
+      "category": "radiation-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "plant_lw_interact",
+      "category": "radiation-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "localized_raytracing",
+      "category": "radiation-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "radiation_interactions_on",
+      "category": "radiation-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "radiation_only",
+      "category": "radiation-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "radiation_scheme",
+      "category": "radiation-parameters",
+      "type": "character",
+      "options": [
+        "clear-sky",
+        "rrtmg",
+        "tenstream"
+      ]
+    },
+    {
+      "param_name": "radiation_volumetric_flux",
+      "category": "radiation-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "raytrace_mpi_rma",
+      "category": "radiation-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "surface_reflections",
+      "category": "radiation-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "sw_radiation",
+      "category": "radiation-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "radiation-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "unscheduled_radiation_calls",
+      "category": "radiation-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "use_broadband_albedo",
+      "category": "radiation-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "advect_particle_water",
+      "category": "salsa-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "bc_aer_b",
+      "category": "salsa-parameters",
+      "type": "character",
+      "options": [
+        "dirichlet",
+        "neumann"
+      ]
+    },
+    {
+      "param_name": "bc_aer_l",
+      "category": "salsa-parameters",
+      "type": "character",
+      "options": [
+        "dirichlet",
+        "neumann",
+        "cyclic"
+      ]
+    },
+    {
+      "param_name": "bc_aer_n",
+      "category": "salsa-parameters",
+      "type": "character",
+      "options": [
+        "dirichlet",
+        "neumann",
+        "cyclic"
+      ]
+    },
+    {
+      "param_name": "bc_aer_r",
+      "category": "salsa-parameters",
+      "type": "character",
+      "options": [
+        "dirichlet",
+        "neumann",
+        "cyclic"
+      ]
+    },
+    {
+      "param_name": "bc_aer_s",
+      "category": "salsa-parameters",
+      "type": "character",
+      "options": [
+        "dirichlet",
+        "neumann",
+        "cyclic"
+      ]
+    },
+    {
+      "param_name": "bc_aer_t",
+      "category": "salsa-parameters",
+      "type": "character",
+      "options": [
+        "dirichlet",
+        "neumann",
+        "initial_gradient"
+      ]
+    },
+    {
+      "param_name": "depo_pcm_par",
+      "category": "salsa-parameters",
+      "type": "character",
+      "options": [
+        "zhang2001",
+        "petroff2010"
+      ]
+    },
+    {
+      "param_name": "depo_pcm_type",
+      "category": "salsa-parameters",
+      "type": "character",
+      "options": [
+        "deciduous_broadleaf"
+      ]
+    },
+    {
+      "param_name": "depo_surf_par",
+      "category": "salsa-parameters",
+      "type": "character",
+      "options": [
+        "zhang2001",
+        "petroff2010"
+      ]
+    },
+    {
+      "param_name": "feedback_to_palm",
+      "category": "salsa-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "nesting_offline_salsa",
+      "category": "salsa-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "nlcnd",
+      "category": "salsa-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "nlcndgas",
+      "category": "salsa-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "nlcndgash2oae",
+      "category": "salsa-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "nlcoag",
+      "category": "salsa-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "nldepo",
+      "category": "salsa-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "nldepo_pcm",
+      "category": "salsa-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "nldepo_surf",
+      "category": "salsa-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "nldistupdate",
+      "category": "salsa-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "salsa_emission_mode",
+      "category": "salsa-parameters",
+      "type": "character",
+      "options": [
+        "no_emission",
+        "uniform",
+        "parameterized",
+        "read_from_file"
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "salsa-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "van_der_waals_coagc",
+      "category": "salsa-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "aero_roughness_heat",
+      "category": "slurb-parameters",
+      "type": "character",
+      "options": [
+        "kanda"
+      ]
+    },
+    {
+      "param_name": "anisotropic_street_canyons",
+      "category": "slurb-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "facade_resistance_parametrization",
+      "category": "slurb-parameters",
+      "type": "character",
+      "options": [
+        "doe-2",
+        "rowley"
+      ]
+    },
+    {
+      "param_name": "moist_physics",
+      "category": "slurb-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "street_canyon_wspeed_factor",
+      "category": "slurb-parameters",
+      "type": "character",
+      "options": [
+        "surfex",
+        "masson"
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "slurb-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "spectra_direction",
+      "category": "spectra-parameters",
+      "type": "character",
+      "options": [
+        "x",
+        "y",
+        "xy"
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "spectra-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "compute_velocity_seeds_local",
+      "category": "synthetic-turbulence-generator-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "disturb_theta",
+      "category": "synthetic-turbulence-generator-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "synthetic-turbulence-generator-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "surface-data-output-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "to_netcdf",
+      "category": "surface-data-output-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "to_vtk",
+      "category": "surface-data-output-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "continuous_tendency",
+      "category": "traffic-module-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "traffic-module-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "theta_tendency",
+      "category": "traffic-module-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "wind_tendency",
+      "category": "traffic-module-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "turbulent-inflow-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "turbulent_inflow_method",
+      "category": "turbulent-inflow-parameters",
+      "type": "character",
+      "options": [
+        "read_from_file",
+        "recycle_turbulent_fluctuation",
+        "recycle_absolute_value",
+        "recycle_absolute_value_thermodynamic"
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "urban-surface-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "user-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "uv-radiation-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "uv_integration_method",
+      "category": "uv-radiation-parameters",
+      "type": "character",
+      "options": [
+        "from_irradiance",
+        "from_radiance"
+      ]
+    },
+    {
+      "param_name": "leg_mode",
+      "category": "virtual-flight-parameters",
+      "type": "character",
+      "options": [
+        "cyclic",
+        "return"
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "virtual-flight-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "interpolate_to_location",
+      "category": "virtual-measurement-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "virtual-measurement-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "warn_out_of_domain_locations",
+      "category": "virtual-measurement-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "pitch_control",
+      "category": "wind-turbine-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "speed_control",
+      "category": "wind-turbine-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "switch_off_module",
+      "category": "wind-turbine-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "tip_loss_correction",
+      "category": "wind-turbine-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    },
+    {
+      "param_name": "yaw_control",
+      "category": "wind-turbine-parameters",
+      "type": "logical",
+      "options": [
+        ".TRUE.",
+        ".FALSE."
+      ]
+    }
+  ],
+  "translation_issues": [
+    {
+      "param_name": "adx",
+      "category": "agent-parameters",
+      "issues": [
+        "'栅格'应为'网格'(CFD语境)"
+      ],
+      "description_zh_snippet": "SI 单位：m。智能体源内智能体之间沿 x 方向的距离。每个智能体源定义为 x = asl 到 asr、y = ass 到 asn 的区域。第一个智能体在 x = asl、y = ass 处释放。更多智能体在 x = asl + N*adx..."
+    },
+    {
+      "param_name": "tau_accel_agent",
+      "category": "agent-parameters",
+      "issues": [
+        "'的'字使用密度过高(4次/54字=7.4%)，建议精简"
+      ],
+      "description_zh_snippet": "SI 单位：s。社会力模型中的松弛时间。确定智能体接近其期望速度和方向的快慢。较小的值导致更激进的行走风格。"
+    },
+    {
+      "param_name": "epol_vegetation_specs",
+      "category": "chemistry-parameters",
+      "issues": [
+        "'被'字被动语态过多(6次)，建议改为主动语态"
+      ],
+      "description_zh_snippet": "花粉释放植被。目前仅有禾本科（Poaceae）植被类型可用。植被类型。PALM 采用 ECMWF-IFS 植被类型分类体系。EMPOL 模型计算禾本科（Poaceae）的花粉。用户也可从该数据库中选择其他花粉释放植被类型，但需为新植被类型提..."
+    },
+    {
+      "param_name": "leaf_area_index",
+      "category": "land-surface-parameters",
+      "issues": [
+        "'被'字被动语态过多(3次)，建议改为主动语态"
+      ],
+      "description_zh_snippet": "SI单位：m 2 m − 2 植被冠层叶面积指数。植被冠层的叶面积指数。若静态驱动文件提供了相应数据，leaf_area_index 的设置可被覆盖。"
+    },
+    {
+      "param_name": "vegetation_coverage",
+      "category": "land-surface-parameters",
+      "issues": [
+        "'被'字被动语态过多(4次)，建议改为主动语态"
+      ],
+      "description_zh_snippet": "地表植被覆盖度。此参数取值范围为 (0.0-1.0)，按地表单元处理。剩余比例视为裸土。对于较小的网格间距，植被覆盖度通常可视为1（即地表单元100%被植被覆盖）。"
+    },
+    {
+      "param_name": "vegetation_type",
+      "category": "land-surface-parameters",
+      "issues": [
+        "'被'字被动语态过多(3次)，建议改为主动语态"
+      ],
+      "description_zh_snippet": "按照内部分类的植被类型。陆面模型中按照内部分类使用的植被类型。用户可从19个预定义类别中选择，类似于 ECMWF-IFS 模型：设定 vegetation_type 后，以下参数将被自动设定：*) 此类别的虚拟值尚未在 PALM 中实现。"
+    },
+    {
+      "param_name": "aero_weight",
+      "category": "particle-parameters",
+      "issues": [
+        "'的'字使用密度过高(4次/52字=7.7%)，建议精简"
+      ],
+      "description_zh_snippet": "气溶胶数浓度的缩放参数。通过保持谱的典型形状，将 aero_type 定义的数浓度缩放至所需的气溶胶量。"
+    },
+    {
+      "param_name": "seed_follows_topography",
+      "category": "particle-parameters",
+      "issues": [
+        "'被'字被动语态过多(3次)，建议改为主动语态"
+      ],
+      "description_zh_snippet": "初始粒子高度被解释为相对于给定地形的值。若 seed_follows_topography = .F.，粒子源的垂直边界 psb 和 pst 被解释为相对于域原点的高度。若 seed_follows_topography = .T.，psb..."
+    },
+    {
+      "param_name": "canopy_drag_coeff",
+      "category": "plant-canopy-parameters",
+      "issues": [
+        "'被'字被动语态过多(3次)，建议改为主动语态"
+      ],
+      "description_zh_snippet": "植被冠层模型中使用的阻力系数。阻力系数用于计算植被冠层引起的阻力。详见植被冠层模型文档。canopy_drag_coeff 必须大于零。典型值为 0.15（Shaw and Schumann, 1992）或 0.20（Cescatti an..."
+    },
+    {
+      "param_name": "plant_lw_interact",
+      "category": "radiation-parameters",
+      "issues": [
+        "'被'字被动语态过多(3次)，建议改为主动语态"
+      ],
+      "description_zh_snippet": "允许植被冠层与长波辐射相互作用的标志。当此标志设为 .T. 时，允许可分辨植被冠层吸收和发射长波辐射。若值设为 .F.，植被冠层对长波辐射透明。"
+    },
+    {
+      "param_name": "turbulent_inflow_method",
+      "category": "turbulent-inflow-parameters",
+      "issues": [
+        "'设置'一词重复5次，可替换为'设定值'、'配置'等"
+      ],
+      "description_zh_snippet": "指定湍流入流方法的类型。在左边界存在不同的湍流入流生成方法。主要有两种方法：回收方法和从文件读取方法。回收方法将所有预报变量的湍流信号在入流边界一定距离内回收并施加于入流边界。从文件读取方法则从动态输入文件读取预报量的入流边界数据并施加于入..."
+    },
+    {
+      "param_name": "uv_integration_method",
+      "category": "uv-radiation-parameters",
+      "issues": [
+        "'被'字被动语态过多(5次)，建议改为主动语态",
+        "'，即'重复3次，可适当替换为'也就是'或省略"
+      ],
+      "description_zh_snippet": "用于计算紫外辐照度的方法。此参数描述用于计算地表紫外辐照度（包括部分遮蔽和反射效应）的方法。各值可以组合使用，以一个或多个空格分隔，即 uv_integration_method = 'from_irradiance from_radian..."
+    }
+  ]
+}
