@@ -1,12 +1,55 @@
 ﻿$Host.UI.RawUI.WindowTitle = "PalmForge - PALM Parameter Configurator"
 
-Write-Host "========================================" -ForegroundColor Cyan
-Write-Host "  PalmForge - PALM Parameter Configurator" -ForegroundColor Cyan
-Write-Host "========================================" -ForegroundColor Cyan
+Write-Host ""
+Write-Host "  ========================================" -ForegroundColor Cyan
+Write-Host "    PalmForge - PALM Parameter Configurator" -ForegroundColor Cyan
+Write-Host "    (Developer Edition - requires Node.js)" -ForegroundColor DarkCyan
+Write-Host "  ========================================" -ForegroundColor Cyan
 Write-Host ""
 
 $projectPath = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location $projectPath
+
+$nodeExists = $null -ne (Get-Command "node" -ErrorAction SilentlyContinue)
+if (-not $nodeExists) {
+    Write-Host "[Error] Node.js is NOT installed!" -ForegroundColor Red
+    Write-Host ""
+    Write-Host "  This version of PalmForge requires Node.js to run." -ForegroundColor White
+    Write-Host "  Please download and install Node.js (LTS recommended):" -ForegroundColor White
+    Write-Host "  https://nodejs.org/" -ForegroundColor Cyan
+    Write-Host ""
+    Write-Host "  After installing Node.js, restart this script." -ForegroundColor White
+    Write-Host ""
+    Write-Host "  Tip: If you don't want to install Node.js, use the" -ForegroundColor DarkGray
+    Write-Host "  standalone version (PalmForge_v1.0.zip) instead." -ForegroundColor DarkGray
+    Write-Host ""
+    Read-Host "Press Enter to exit"
+    exit 1
+}
+
+$nodeVersion = (node --version 2>$null)
+$npmExists = $null -ne (Get-Command "npm" -ErrorAction SilentlyContinue)
+if (-not $npmExists) {
+    Write-Host "[Error] npm is NOT available!" -ForegroundColor Red
+    Write-Host "  Please reinstall Node.js from https://nodejs.org/" -ForegroundColor White
+    Read-Host "Press Enter to exit"
+    exit 1
+}
+
+Write-Host "[Check] Node.js $nodeVersion detected" -ForegroundColor Green
+
+if (-not (Test-Path (Join-Path $projectPath "node_modules"))) {
+    Write-Host "[Install] node_modules not found, running npm install..." -ForegroundColor Yellow
+    npm install
+    if ($LASTEXITCODE -ne 0) {
+        Write-Host "[Error] npm install failed!" -ForegroundColor Red
+        Read-Host "Press Enter to exit"
+        exit 1
+    }
+    Write-Host "[Install] Dependencies installed successfully" -ForegroundColor Green
+}
+
+Write-Host ""
 
 Write-Host "[Clean] Cleaning residual ports..." -ForegroundColor Yellow
 $ports = @(5173, 5174, 5175, 5176, 5177, 5178, 5179, 5180)
